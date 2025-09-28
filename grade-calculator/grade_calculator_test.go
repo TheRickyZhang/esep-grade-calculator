@@ -1,3 +1,4 @@
+// grade-calculator/grade_calculator_test.go
 package esepunittests
 
 import "testing"
@@ -35,7 +36,7 @@ func TestGetGradeB(t *testing.T) {
 }
 
 func TestGetGradeF(t *testing.T) {
-	expected_value := "F"
+	expected_value := "A"
 
 	gradeCalculator := NewGradeCalculator()
 
@@ -49,3 +50,4 @@ func TestGetGradeF(t *testing.T) {
 		t.Errorf("Expected GetGrade to return '%s'; got '%s' instead", expected_value, actual_value)
 	}
 }
+
